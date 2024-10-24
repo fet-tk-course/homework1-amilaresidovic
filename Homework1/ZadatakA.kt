@@ -5,9 +5,15 @@ interface Person{
 open class Developer(val ime:String,val prezime:String,val godine:Int,val zemlja:String,val progJezik: String): Person{
 
 }
-open class BackendDeveloper(): Developer(){
+class BackendDeveloper(): Developer(backendFramework){
 
 }
-open class FrontendDeveloper(): Developer(){
+class FrontendDeveloper(): Developer(frontendFramework){
+
+}
+fun brojJezika(progJezik: List<String>): Map<String,Int>{
+
+}
+fun prosjStarost(progJezik: List<String>): Map<String,Double>{
 
 }
